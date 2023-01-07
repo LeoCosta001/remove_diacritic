@@ -1,4 +1,4 @@
-# [Dart] Remove diacritic library
+# Remove diacritic library
 
 Removes accents and diacritics signs from a string by replacing them with an equivalent character.
 
