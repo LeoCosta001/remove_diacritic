@@ -1,6 +1,6 @@
 name: remove_diacritic
 description: Package to replace diacritics and accents with equivalent characters.
-version: 1.0.0
+version: 0.8.0
 homepage: https://github.com/LeoCosta001/remove_diacritic
 
 environment:
