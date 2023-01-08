@@ -1,7 +1,7 @@
 library remove_diacritic;
 
 /// Removes common accents and diacritical signs from a string by replacing them with an equivalent character.
-String removeDiacritics(String str) {
+String removeDiacritic(String str) {
   final diacriticsMap = {};
   final diacriticsRegExp = RegExp('[^\u0000-\u007E]', multiLine: true);
 

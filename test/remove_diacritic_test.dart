@@ -7,26 +7,26 @@ void main() {
     test('Multi line.', () {
       const quote = 'My example test '
           'my example test.';
-      expect(removeDiacritics(quote), quote);
+      expect(removeDiacritic(quote), quote);
     });
 
     test('Some letters.', () {
-      expect(removeDiacritics('ÀÁÂÃÄÅǺĀĂĄǍΑΆẢẠẦẪẨẬẰẮẴẲẶА'), 'AAAAAAAAAAAΑAAAAAAAAAAAAА');
-      expect(removeDiacritics('àáâãåǻāăąǎαάảạầấẫẩậằắẵẳặа'), 'aaaaaaaaaaaaaaaaaaaaaaaaа');
-      expect(removeDiacritics('ÈÉÊËĒĔĖĘĚΕΈẼẺẸỀẾỄỂỆЕ'), 'EEEEEEEEEΕEEEEEEEEEЕ');
-      expect(removeDiacritics('èéêëēĕėęěẽẻẹềếễểệе'), 'eeeeeeeeeeeeeeeeeе');
-      expect(removeDiacritics('ÌÍÎÏĨĪĬǏĮİΊΙΪỈỊ'), 'IIIIIIIIIIIΙIII');
-      expect(removeDiacritics('ìíîïĩīĭǐįıỉịї'), 'iiiiiiiiiiiii');
-      expect(removeDiacritics('ÒÓÔÕŌŎǑŐƠØǾΟΌỎỌỒỐỖỔỘỜỚỠỞỢО'), 'OOOOOOOOOOOΟOOOOOOOOOOOOOО');
-      expect(removeDiacritics('òóôõōŏǒőơøǿοόỏọồốỗổộờớỡởợо'), 'oooooooooooοoooooooooooooо');
-      expect(removeDiacritics('ÙÚÛŨŪŬŮŰŲƯǓǕǗǙǛŨỦỤỪỨỮỬỰ'), 'UUUUUUUUUUUUUUUUUUUUUUU');
-      expect(removeDiacritics('ùúûũūŭůűųưǔǖǘǚǜủụừứữửự'), 'uuuuuuuuuuuuuuuuuuuuuu');
-      expect(removeDiacritics('ÝŸŶΥΎΫỲỸỶỴ'), 'YYYΥYYYYYY');
-      expect(removeDiacritics('ýÿŷỳỹỷỵ'), 'yyyyyyy');
-      expect(removeDiacritics('ĹĻĽĿŁ'), 'LLLLL');
-      expect(removeDiacritics('ĺļľŀł'), 'lllll');
-      expect(removeDiacritics('ÇĆĈĊČ'), 'CCCCC');
-      expect(removeDiacritics('çćĉċč'), 'ccccc');
+      expect(removeDiacritic('ÀÁÂÃÄÅǺĀĂĄǍΑΆẢẠẦẪẨẬẰẮẴẲẶА'), 'AAAAAAAAAAAΑAAAAAAAAAAAAА');
+      expect(removeDiacritic('àáâãåǻāăąǎαάảạầấẫẩậằắẵẳặа'), 'aaaaaaaaaaaaaaaaaaaaaaaaа');
+      expect(removeDiacritic('ÈÉÊËĒĔĖĘĚΕΈẼẺẸỀẾỄỂỆЕ'), 'EEEEEEEEEΕEEEEEEEEEЕ');
+      expect(removeDiacritic('èéêëēĕėęěẽẻẹềếễểệе'), 'eeeeeeeeeeeeeeeeeе');
+      expect(removeDiacritic('ÌÍÎÏĨĪĬǏĮİΊΙΪỈỊ'), 'IIIIIIIIIIIΙIII');
+      expect(removeDiacritic('ìíîïĩīĭǐįıỉịї'), 'iiiiiiiiiiiii');
+      expect(removeDiacritic('ÒÓÔÕŌŎǑŐƠØǾΟΌỎỌỒỐỖỔỘỜỚỠỞỢО'), 'OOOOOOOOOOOΟOOOOOOOOOOOOOО');
+      expect(removeDiacritic('òóôõōŏǒőơøǿοόỏọồốỗổộờớỡởợо'), 'oooooooooooοoooooooooooooо');
+      expect(removeDiacritic('ÙÚÛŨŪŬŮŰŲƯǓǕǗǙǛŨỦỤỪỨỮỬỰ'), 'UUUUUUUUUUUUUUUUUUUUUUU');
+      expect(removeDiacritic('ùúûũūŭůűųưǔǖǘǚǜủụừứữửự'), 'uuuuuuuuuuuuuuuuuuuuuu');
+      expect(removeDiacritic('ÝŸŶΥΎΫỲỸỶỴ'), 'YYYΥYYYYYY');
+      expect(removeDiacritic('ýÿŷỳỹỷỵ'), 'yyyyyyy');
+      expect(removeDiacritic('ĹĻĽĿŁ'), 'LLLLL');
+      expect(removeDiacritic('ĺļľŀł'), 'lllll');
+      expect(removeDiacritic('ÇĆĈĊČ'), 'CCCCC');
+      expect(removeDiacritic('çćĉċč'), 'ccccc');
     });
   });
 }
